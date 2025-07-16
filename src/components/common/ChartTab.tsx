@@ -1,6 +1,6 @@
-import { useState } from "react";
+import {JSX, useState} from 'react';
 
-const ChartTab: React.FC = () => {
+const ChartTab: () => JSX.Element = () => {
   const [selected, setSelected] = useState<
     "optionOne" | "optionTwo" | "optionThree"
   >("optionOne");

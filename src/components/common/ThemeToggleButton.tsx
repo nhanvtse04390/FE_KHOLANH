@@ -1,6 +1,7 @@
 import { useTheme } from "../../context/ThemeContext";
+import {JSX} from 'react'
 
-export const ThemeToggleButton: React.FC = () => {
+export const ThemeToggleButton: () => JSX.Element = () => {
   const { toggleTheme } = useTheme();
 
   return (

@@ -213,7 +213,7 @@ export default function BasicTableOne() {
                   {order.budget}
                 </TableCell>
               </TableRow>
-            ))}
+            ))} as React.ReactNode[] // Ensure the map returns an array of React nodes
           </TableBody>
         </Table>
       </div>

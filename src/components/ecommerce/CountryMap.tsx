@@ -1,13 +1,14 @@
 // react plugin for creating vector maps
 import { VectorMap } from "@react-jvectormap/core";
 import { worldMill } from "@react-jvectormap/world";
+import {JSX} from 'react'
 
 // Define the component props
 interface CountryMapProps {
   mapColor?: string;
 }
 
-const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
+const CountryMap: ({mapColor}: { mapColor: any }) => JSX.Element = ({ mapColor }) => {
   return (
     <VectorMap
       map={worldMill}
