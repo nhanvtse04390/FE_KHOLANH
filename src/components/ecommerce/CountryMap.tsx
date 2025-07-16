@@ -4,9 +4,9 @@ import { worldMill } from "@react-jvectormap/world";
 import {JSX} from 'react'
 
 // Define the component props
-interface CountryMapProps {
-  mapColor?: string;
-}
+// interface CountryMapProps {
+//   mapColor?: string;
+// }
 
 const CountryMap: ({mapColor}: { mapColor: any }) => JSX.Element = ({ mapColor }) => {
   return (
