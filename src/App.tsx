@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { Routes, Route} from "react-router-dom";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
@@ -18,11 +18,40 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function App() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.key === 'k') {
+        e.preventDefault()
+        console.log('Ctrl + K triggered: Open search')
+        // Mở modal tìm kiếm hoặc thực hiện hành động tương ứng
+      }
+
+      if (e.key === 'F9') {
+        e.preventDefault()
+        console.log('F9 pressed: Screenshot or log action')
+        // Thực hiện hành động tương ứng
+      }
+      if (e.key === 'F1') {
+        e.preventDefault()
+        navigate('/signin')
+        console.log('F1 pressed: Screenshot or log action')
+        // Thực hiện hành động tương ứng
+      }
+      // Thêm các phím tắt khác ở đây
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
   return (
     <>
-      <Router>
         <ScrollToTop />
         <Routes>
           {/* Dashboard Layout */}
@@ -60,7 +89,6 @@ export default function App() {
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
     </>
   );
 }
