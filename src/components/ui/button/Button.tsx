@@ -20,7 +20,8 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = "",
   disabled = false,
-}) => {
+  ...rest
+  }) => {
   // Size Classes
   const sizeClasses = {
     sm: "px-4 py-3 text-sm",
@@ -44,6 +45,7 @@ const Button: React.FC<ButtonProps> = ({
       }`}
       onClick={onClick}
       disabled={disabled}
+      {...rest}
     >
       {startIcon && <span className="flex items-center">{startIcon}</span>}
       {children}
