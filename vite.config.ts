@@ -15,6 +15,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/',
   server: {
     port: 3000,      // ✅ đổi cổng thành 3000
     open: true       // ✅ tự động mở trình duyệt
