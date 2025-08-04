@@ -1,21 +1,21 @@
-# TailAdmin React - Free React Tailwind Admin Dashboard Template
+# TailAdmin Vue - Free Vue.js Tailwind CSS Admin Dashboard Template
 
-TailAdmin is a free and open-source admin dashboard template built on **React and Tailwind CSS**, providing developers
-with everything they need to create a comprehensive, data-driven back-end,
-dashboard, or admin panel solution for upcoming web projects.
+TailAdmin Vue is a free, open-source admin dashboard template **built on Vue.js**, popular and progressive JavaScript
+framework, and **Tailwind CSS**. This **powerful combination** provides developers with an extensive library of
+essential components, elements, and pages to launch a comprehensive and data-centric back-end, dashboard, or admin panel
+solution for any Vue.js based web projects.
 
-With TailAdmin, you get access to all the necessary dashboard UI components, elements, and pages required to build a
-feature-rich and complete dashboard or admin panel. Whether you're building dashboard or admin panel for a complex web
-application or a simple website, TailAdmin is the perfect solution to help you get up and running quickly.
+![TailAdmin Vue.js Dashboard Preview](./banner.png)
 
-![TailAdmin React.js Dashboard Preview](./banner.png)
+With TailAdmin Vue, you can leverage **Vue.js 3** features such as declarative rendering, component-based architecture,
+Vue Router for routing, and Pinia for state management. It also utilizes the power of Tailwind CSS for rapid UI
+development with its low-level utility classes and responsive design capabilities.
 
 ## Overview
 
-TailAdmin provides essential UI components and layouts for building feature-rich, data-driven admin dashboards and
-control panels. It's built on:
+TailAdmin provides essential UI components and layouts for building feature-rich, data-driven admin dashboards and control panels. It's built on:
 
-- React 19
+- Vue 3 (Vite)
 - TypeScript
 - Tailwind CSS
 
@@ -24,19 +24,19 @@ control panels. It's built on:
 - [✨ Visit Website](https://tailadmin.com)
 - [📄 Documentation](https://tailadmin.com/docs)
 - [⬇️ Download](https://tailadmin.com/download)
-- [🖌️ Figma Design File (Community Edition)](https://www.figma.com/community/file/1214477970819985778)
+- [🖌️ Figma Design File (Community Edition)](https://www.figma.com/community/file/1463141366275764364)
 - [⚡ Get PRO Version](https://tailadmin.com/pricing)
 
 ### Demos
 
-- [Free Version](https://free-react-demo.tailadmin.com/)
-- [Pro Version](https://react-demo.tailadmin.com)
+- [Free Version](https://free-vue-demo.tailadmin.com/)
+- [Pro Version](https://vue-demo.tailadmin.com)
 
 ### Other Versions
 
 - [HTML Version](https://github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template)
 - [Next.js Version](https://github.com/TailAdmin/free-nextjs-admin-dashboard)
-- [Vue.js Version](https://github.com/TailAdmin/vue-tailwind-admin-dashboard)
+- [React Version](https://github.com/TailAdmin/free-react-tailwind-admin-dashboard)
 
 ## Installation
 
@@ -45,13 +45,18 @@ control panels. It's built on:
 To get started with TailAdmin, ensure you have the following prerequisites installed and set up:
 
 - Node.js 18.x or later (recommended to use Node.js 20.x or later)
+- Recommended IDE Setup: [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+#### Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
 ### Cloning the Repository
 
 Clone the repository using the following command:
 
 ```bash
-git clone https://github.com/TailAdmin/free-react-tailwind-admin-dashboard.git
+git clone https://github.com/TailAdmin/vue-tailwind-admin-dashboard.git
 ```
 
 > Windows Users: place the repository near the root of your drive if you face issues while cloning.
@@ -64,29 +69,20 @@ git clone https://github.com/TailAdmin/free-react-tailwind-admin-dashboard.git
    yarn install
    ```
 
-   > Use the `--legacy-peer-deps` flag, if you face issues while installing.
-
 2. Start the development server:
+
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-## Components
-
-TailAdmin is a pre-designed starting point for building a web-based dashboard using React.js and Tailwind CSS. The
-template includes:
-
-- Sophisticated and accessible sidebar
-- Data visualization components
-- Prebuilt profile management and 404 page
-- Tables and Charts(Line and Bar)
-- Authentication forms and input elements
-- Alerts, Dropdowns, Modals, Buttons and more
-- Can't forget Dark Mode 🕶️
-
-All components are built with React and styled using Tailwind CSS for easy customization.
+3. Production build:
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
 ## Feature Comparison
 
@@ -107,13 +103,56 @@ All components are built with React and styled using Tailwind CSS for easy custo
 
 To learn more about pro version features and pricing, visit our [pricing page](https://tailadmin.com/pricing).
 
-## Changelog
+## Components
 
-### Version 2.0.2 - [March 25, 2025]
+TailAdmin is a pre-designed starting point for building a web-based dashboard using Vue.js and Tailwind CSS. The template includes:
 
-- Upgraded to React 19
-- Included overrides for packages to prevent peer dependency errors.
-- Migrated from react-flatpickr to flatpickr package for React 19 support
+- Sophisticated and accessible sidebar
+- Data visualization components
+- Prebuilt profile management and 404 page
+- Tables and Charts(Line and Bar)
+- Authentication forms and input elements
+- Alerts, Dropdowns, Modals, Buttons and more
+- Can't forget Dark Mode 🕶️
+
+All components are built with Vue and styled using Tailwind CSS for easy customization.
+
+## Features
+
+**💎 High-quality, Premium Modern Design:**
+A thoughtfully designed dashboard template with a deep focus on UX/UI, already trusted and utilized by over 10K+ web apps worldwide.
+
+**✨ Vue 3:**
+Get enhanced performance with the latest Vue version.
+
+**⚡ Vite Build System:**
+Enjoy quick development with Vite, ensuring fast code compilation.
+
+**🔀 Vue Router:**
+Manage app navigation with ease using Vue Router for seamless transitions.
+
+**💡 Reactive Utilities:**
+Enhance component reactivity with @vueuse/core utilities.
+
+**📊 Charting with ApexCharts:**
+Visualize data with ApexCharts for beautiful analytics.
+
+**🗺️ Vector Maps with JSVectorMap:**
+Easily integrate interactive vector maps with JSVectorMap.
+
+**🖌️ UI with Tailwind CSS:**
+Frontend UI built on the powerful and versatile Tailwind CSS framework.
+
+**💫 TypeScript Support:**
+Write safer, maintainable code with TailAdmin Vue's TypeScript Support.
+
+**✅ Linting and Formatting:**
+Maintain a clean codebase with built-in linting and formatting.
+
+**🗃️ State Management with Pinia:**
+Handle your app's state with Pinia for clean, organized code.
+
+## Update Logs
 
 ### Version 2.0.1 - [February 27, 2025]
 
@@ -132,61 +171,50 @@ To learn more about pro version features and pricing, visit our [pricing page](h
 
 ### Version 2.0.0 - [February 2025]
 
-A major update with comprehensive redesign and modern React patterns implementation.
+Major update with Vue 3 migration and comprehensive redesign.
 
 #### Major Improvements
 
-- Complete UI redesign with modern React patterns
-- New features: collapsible sidebar, chat, and calendar
-- Improved performance and accessibility
-- Updated data visualization using ApexCharts
+- Complete migration to Vue 3 Composition API
+- Updated to Vue Router 4
+- Enhanced user interface with new Vue 3 components
+- Improved performance with Vue 3's virtual DOM
+- Better accessibility and responsive design
 
-#### Key Features
+#### New Features
 
 - Redesigned dashboards (Ecommerce, Analytics, Marketing, CRM)
-- Enhanced navigation with React Router integration
-- Advanced tables with sorting and filtering
-- Calendar with drag-and-drop support
-- New UI components and improved existing ones
+- Collapsible sidebar with Vue 3 integration
+- Enhanced navigation with Vue Router 4
+- Real-time chat functionality
+- Full-featured calendar with drag-and-drop
+- Advanced table components
+- Updated data visualization with ApexCharts
 
 #### Breaking Changes
 
-- Updated sidebar component API
-- Migrated charts to ApexCharts
-- Revised authentication system
+- Requires Vue 3 and Vue Router 4
+- Chart components migrated to ApexCharts for Vue 3
+- Modified routing implementation
+- Updated component APIs for Vue 3 compatibility
 
-[Read more](https://tailadmin.com/docs/update-logs/react) on this release.
+[Read more](https://tailadmin.com/docs/update-logs/vue) on this release.
 
-### Version 1.3.7 - [June 20, 2024]
+### Version 1.0.2 - [June 19, 2024]
+
+#### Issues
+
+- Fix Mobile Menu Hamburger Icon issue.
+
+### Version 1.0.1 - [Feb 08, 2024]
 
 #### Enhancements
 
-1. Remove Repetition of DefaultLayout in every Pages
-2. Add ClickOutside Component for reduce repeated functionality in Header Message, Notification and User Dropdowns.
+- Make it functional [Multiselect Dropdown/Form Elements].
+- Delete SelectGroup Components then create a SelectGroup folder and create two files under this
+  folder SelectGroupOne.vue SelectGroupTwo.vue [Select Group/Form Elements & Layout].
+- Update style.css file.
 
-### Version 1.3.6 - [Jan 31, 2024]
+### Version 1.0.0 - Initial Release - [Jan 22, 2024]
 
-#### Enhancements
-
-1. Integrate flatpickr in [Date Picker/Form Elements]
-2. Change color after select an option [Select Element/Form Elements].
-3. Make it functional [Multiselect Dropdown/Form Elements].
-4. Make best value editable [Pricing Table One/Pricing Table].
-5. Rearrange Folder structure.
-
-### Version 1.2.0 - [Apr 28, 2023]
-
-- Add Typescript in TailAdmin React.
-
-### Version 1.0.0 - Initial Release - [Mar 13, 2023]
-
-- Initial release of TailAdmin React.
-
-## License
-
-TailAdmin React.js Free Version is released under the MIT License.
-
-## Support
-
-If you find this project helpful, please consider giving it a star on GitHub. Your support helps us continue developing
-and maintaining this template.
+- Initial release of TailAdmin Vue.
